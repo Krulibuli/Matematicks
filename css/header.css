@@ -1,0 +1,39 @@
+/* Header */
+.header {
+    background-color: #239BA7;
+    color: #ECECBB;
+    position: absolute;
+}
+/* Collapsing Function Themes */
+.collapsible {
+    background-color: #777;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #7ADAA5;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #E1AA36;
+}
+.content a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ECECBB;
+}
+/* Break Line */
+.line-break {
+    border-top: 3px solid black;
+}
