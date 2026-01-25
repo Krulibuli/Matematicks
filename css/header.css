@@ -1,39 +1,36 @@
 /* Header */
+.header a {
+  float: left;
+  color: #326a99;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+}
+a:nth-child(3) {margin-right: 40px;}
 .header {
-    background-color: #239BA7;
-    color: #ECECBB;
-    position: absolute;
-}
-/* Collapsing Function Themes */
-.collapsible {
-    background-color: #777;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #ffffff;
+  padding: 20px 10px;
+  z-index: 1000;
 }
 
-.active,
-.collapsible:hover {
-    background-color: #7ADAA5;
+.header-right {
+  float: right;
 }
-
-.content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #E1AA36;
+.logo {
+    font-size: 50px;
 }
-.content a {
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ECECBB;
+.header a:hover {
+  background-color: #82b0d6;
+  color: #326a99;
+  transition: background-color 0.2s ease;
 }
-/* Break Line */
-.line-break {
-    border-top: 3px solid black;
+.line {
+    border-top: 10px solid #9bbcd7;
 }

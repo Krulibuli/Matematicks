@@ -1,0 +1,224 @@
+/* Main Style of the Website */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main {
+    background: url(../../images/graph-7848156.jpg);
+    color: white;
+    position: relative;
+    height: 400vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 10px;
+}
+.box h1{
+    margin: 10px;
+}
+.subtitle span {
+    color: #b1d3ee;
+}
+.boxt {
+    margin: 20px;
+    line-height: 10px;
+}
+.boxt p {
+    justify-content: center;
+}
+.foto  {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.foto-box {
+    line-height: normal;
+    padding: 10px;
+    border: 5px double white;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+.foto-box img {
+    margin: 10px;
+    padding: 5px;
+    border: 6.7px solid white;
+    border-radius: 20px;
+}
+.line {
+    border-top: 5px solid white;
+    padding: 10px;
+    margin: 0px 50px -20px 50px;
+}
+.line2 {
+    border-top: 2px solid white;
+    padding: 10px;
+    margin: 5px 10px -15px 10px;
+}
+iframe {
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 10px;
+}
+
+#myButton {
+    padding: 10px;
+    width: 500px;
+    border-radius: 20px;
+    border: 6.7px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #386d99;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#myButton:hover {
+    background-color: #b1d3ee;
+}
+
+
+/* ------------------------ */
+
+
+/* Grid */
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+margin: 10px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 4 / 1 / 5 / 3; }
+
+.box {
+    width: 800  px;
+    height: 800px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.div7 {
+    height: 900px;
+}
+.boxt img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ------------------------- */
+
+
+/* Animations */
+/* load in for title */
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.title span {
+    display: inline-block;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: riseUp 0.6s ease-out forwards;
+}
+
+.title span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.title span:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.title span:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.title span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.title span:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.title span:nth-child(7) {
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(8) {
+    animation-delay: 0.35s;
+}
+
+.title span:nth-child(9) {
+    animation-delay: 0.4s;
+}
+
+.title span:nth-child(10) {
+    animation-delay: 0.45s;
+}
+
+.title span:nth-child(11) {
+    animation-delay: 0.5s;
+}
+
+@keyframes riseUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* load in after title*/
+.subtitle {
+    margin-top: 16px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: floatIn 0.6s ease-out forwards;
+    animation-delay: 0.65s;
+}
+
+@keyframes riseUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,147 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    color: #326a99;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.text {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttons button{
+    padding: 10px 40px;
+    margin: 10px;
+    background-color: white;
+    border: 3px solid #326a99;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #2b597e;
+}
+.buttons a {
+    text-decoration: none;
+    color: #2b597e;
+}
+.buttons button:hover{
+    background-color: #82b0d6;
+    transition: background-color 0.2s ease;
+}
+/* Animations */
+/* load in for title */
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.title span {
+    display: inline-block;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: riseUp 0.6s ease-out forwards;
+}
+
+.title span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.title span:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.title span:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.title span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.title span:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.title span:nth-child(7) {
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(8) {
+    animation-delay: 0.35s;
+}
+
+.title span:nth-child(9) {
+    animation-delay: 0.4s;
+}
+
+.title span:nth-child(10) {
+    animation-delay: 0.45s;
+}
+
+.title span:nth-child(11) {
+    animation-delay: 0.5s;
+}
+
+@keyframes riseUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* load in after title*/
+.subtitle {
+    margin-top: 16px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: floatIn 0.6s ease-out forwards;
+    animation-delay: 0.65s;
+}
+
+@keyframes riseUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
