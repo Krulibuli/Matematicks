@@ -1,12 +1,17 @@
 .footer {
     padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .f-logo {
     text-decoration: none;
-    float: left;
     color: #326a99;
 }
 .footer p {
-    text-align: center;
     color: #326a99;
+}
+.footer i{
+    color: #326a99;
+    font-size: 30px;
 }
