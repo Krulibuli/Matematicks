@@ -242,6 +242,6 @@ margin: 10px;
 
 @media (min-width: 2500px) {
     .main {
-        height: 250vh;
+        height: 300vh;
     }
 }
