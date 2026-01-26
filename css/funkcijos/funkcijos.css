@@ -75,7 +75,7 @@ iframe {
     padding: 10px;
 }
 
-#myButton {
+/* #myButton {
     padding: 10px;
     width: 500px;
     border-radius: 20px;
@@ -88,6 +88,22 @@ iframe {
     transition: background-color 0.3s ease;
 }
 #myButton:hover {
+    background-color: #b1d3ee;
+} */
+.link a{
+    text-decoration: none;
+    padding: 10px 300px 10px 300px;
+    text-align: center;
+    border-radius: 20px;
+    border: 6.7px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #386d99;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.link a:hover{
     background-color: #b1d3ee;
 }
 
