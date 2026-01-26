@@ -238,3 +238,10 @@ margin: 10px;
         opacity: 1;
     }
 }
+
+
+@media (min-width: 2560px) {
+    .main {
+        height: 250vh;
+    }
+}
